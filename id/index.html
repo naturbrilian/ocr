@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="Tool for extracting images to text" name="description">
+    <meta name="theme-color" content="#F79B00">
+    
+    <title>OCR Apps Website</title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+	<link href="../images/favico.png" type="image/png" rel="icon">
+    <script src="../assets/tesseract.min.js" defer></script>
+    <script src="../assets/script.js" defer></script>
+
+    <link rel="me" href="https://sakurajima.social/@naturbrilian" />
+    <link rel="me" href="https://geoplanetary.net/@naturbrilian" />
+    <link rel="me" href="https://misskey.io/@naturbrilian" />
+    <link rel="me" href="https://libre.fm/user/naturbrilian" />
+    <link rel="me" href="https://threads.com/@naturbrilian" />
+    <link rel="me" href="https://sakurajima.moe/@naturbrilian" />
+    <link rel="me" href="https://bsky.brid.gy/ap/did:plc:l2evp4cdtotu6yrahtp73lq6" />
+    <link rel="me" class="h-card" href="https://naturbrilian.github.io/ocr" />
+</head>
+
+<body>
+    <h2>Ekstrak teks dari gambar</h2>
+	<p>Lihat halaman ini dalam bahasa <a href="../index.html">Inggris</a></p>
+    <p>Project ini terinspirasi dari <a href="https://promoberkahkemilau.com" target="_blank" rel="noopener noreferrer">Promo Berkah Kemilau yang diadakan oleh Indolakto</a>.</p>
+
+    <div class="box">
+        <label for="pilih-gambar">Pilih gambar</label>
+        <input type="file" id="pilih-gambar" accept="image/*">
+    </div>
+
+    <div>Status: <span id="status" aria-live="polite">Menunggu gambar</span></div>
+
+    <h3>Hasil teks:</h3>
+    <textarea id="hasil-teks" placeholder="Teks yang diekstrak akan muncul disini..." readonly></textarea>
+
+    <footer><p>Project oleh <a href="https://naturbrilian.nekoweb.org" target="_blank" rel="noopener noreferrer">Natur Brilian</a> | Gambar untuk favicon disediakan oleh <a href="https://www.flaticon.com/free-icon/ocr_8005683" target="_blank" rel="noopener noreferrer">Flat Icons</a></p></footer>
+</body>
+</html>
