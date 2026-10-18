@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="Tool for extracting images to text" name="description">
     <title>OCR Apps Website</title>
     <link rel="stylesheet" href="assets/style.css">
+	<link href="images/favico.png" type="image/png" rel="icon">
     <script src="assets/tesseract.min.js" defer></script>
     <script src="assets/script.js" defer></script>
 </head>
 
 <body>
-    <h2>Extract text from an image</h2>
+    <h2>Extract text from image</h2>
     <p>This project is inspired by <a href="https://promoberkahkemilau.com" target="_blank" rel="noopener noreferrer">Promo Berkah Kemilau by Indolakto</a>.</p>
 
     <div class="box">
-        <label for="pilih-gambar">Choose an image:</label>
+        <label for="pilih-gambar">Choose image:</label>
         <input type="file" id="pilih-gambar" accept="image/*">
     </div>
 
-    <div>Status: <span id="status" aria-live="polite">Waiting for an image</span></div>
+    <div>Status: <span id="status" aria-live="polite">Waiting for image</span></div>
 
     <h3>Result text:</h3>
     <textarea id="hasil-teks" placeholder="The extracted text will appear here..." readonly></textarea>
 
-    <footer><p>Project by <a href="https://naturbrilian.nekoweb.org" target="_blank" rel="noopener noreferrer">Natur Brilian</a></p></footer>
+    <footer><p>Project by <a href="https://naturbrilian.nekoweb.org" target="_blank" rel="noopener noreferrer">Natur Brilian</a> | Images for favicon provided by <a href="https://www.flaticon.com/free-icon/ocr_8005683" target="_blank" rel="noopener noreferrer">Flat Icons</a></p></footer>
 </body>
 </html>
